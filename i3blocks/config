@@ -10,11 +10,15 @@
 separator=false
 separator_block_width=15
 
+[volume]
+command=~/.config/i3blocks/volume.sh
+interval=2
+signal=10
+
 [battery]
 command=~/.config/i3blocks/battery.sh
 interval=30
 signal=11
-
 
 [time]
 command=date '+%Y-%m-%d %H:%M:%S'
