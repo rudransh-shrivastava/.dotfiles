@@ -7,4 +7,5 @@ vim.diagnostic.config({
     spacing = 2,
   },
   update_in_insert = true,
+  signs = false,
 })
