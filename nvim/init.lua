@@ -6,7 +6,8 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes"
 vim.diagnostic.config({
-  virtual_text = {
+  virtual_text = false,
+  virtual_lines = {
     prefix = "■",
     spacing = 2,
   },
