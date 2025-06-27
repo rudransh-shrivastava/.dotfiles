@@ -13,6 +13,5 @@ vim.diagnostic.config({
   virtual_lines = {
     prefix = "■",
     spacing = 2,
-  },
-  update_in_insert = true,
+  }
 })
