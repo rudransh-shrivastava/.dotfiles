@@ -3,9 +3,6 @@ return {
     event = "LspAttach",
     config = function()
         require("fidget").setup({
-            display  = {
-                notification = false,
-            }
         })
     end,
 }
