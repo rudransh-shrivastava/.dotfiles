@@ -9,12 +9,10 @@ return {
         config = function()
             local lspconfig = require("lspconfig")
             local cmp_nvim_lsp = require("cmp_nvim_lsp")
-
             local capabilities = cmp_nvim_lsp.default_capabilities()
 
             local on_attach = function(_, bufnr)
                 local opts = { noremap = true, silent = true, buffer = bufnr }
-
                 vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)       -- Go to definition
                 vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)            -- Hover documentation
                 vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)  -- Go to implementation
@@ -22,14 +20,16 @@ return {
                 vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)      -- List references
             end
 
-            local servers = { "lua_ls", "ts_ls", "pyright", "gopls" }
-
+            -- Configure all servers with the same base setup
+            local servers = { "pyright", "gopls", "ts_ls", "clangd", "html", "jsonls" }
             for _, server in ipairs(servers) do
                 lspconfig[server].setup({
                     on_attach = on_attach,
                     capabilities = capabilities,
                 })
             end
+
+            -- Configuration for lua_ls
             lspconfig.lua_ls.setup({
                 settings = {
                     Lua = {
