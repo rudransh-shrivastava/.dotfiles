@@ -31,11 +31,6 @@ return {
 				["<C-Space>"] = cmp.mapping.complete(),
 				["<C-e>"] = cmp.mapping.abort(),
 				["<CR>"] = cmp.mapping.confirm({ select = true }),
-
-				-- Always insert a literal tab character
-				["<Tab>"] = cmp.mapping(function(fallback)
-					fallback()
-				end, { "i", "s" }),
 			}),
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
