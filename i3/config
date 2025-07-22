@@ -34,6 +34,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Start a compositor
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
+
 # Enable qt6ct to control Qt theming
 exec_always --no-startup-id export QT_QPA_PLATFORMTHEME=qt6ct
 

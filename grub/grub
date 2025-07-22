@@ -1,1 +1,0 @@
-GRUB_CMDLINE_LINUX_DEFAULT='nowatchdog nvme_load=YES loglevel=3 resume=UUID=e83ce322-2ad8-4018-91b5-4d6aa8052cee usbcore.autosuspend=-1 mem_sleep_default=deep'
