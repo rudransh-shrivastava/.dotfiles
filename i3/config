@@ -15,6 +15,9 @@ set $mod Mod1
 # is used in the bar {} block below.
 font pango:monospace 8
 
+# remove borders
+for_window [class="^.*"] border none
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -33,6 +36,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+
+# Start xfsettings daemon
+exec --no-startup-id xfsettingsd --sm-client-disable
 
 # Start a compositor
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
