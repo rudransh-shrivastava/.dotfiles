@@ -37,9 +37,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# Start xfsettings daemon
-exec --no-startup-id xfsettingsd --sm-client-disable
-
 # Start a compositor
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
