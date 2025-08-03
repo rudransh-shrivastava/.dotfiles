@@ -4,6 +4,7 @@ end
 
 alias vim nvim
 alias home "cd ~/"
+alias ls eza
 
 # Load fnm (fast node manager)
 set -gx PATH $HOME/.fnm $PATH
