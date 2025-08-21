@@ -1,0 +1,27 @@
+[credential]
+        credentialStore = secretservice
+        manager = cache
+        helper = cache
+        helper =
+        helper = /usr/bin/git-credential-manager
+[user]
+        email = rudransh.shr@gmail.com
+        name = Rudransh Shrivastava
+[credential "https://git.coffeecodes.in"]
+        provider = generic
+[alias]
+        tree = log --graph --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr' --all
+[protocol "file"]
+        allow = always
+[core]
+  editor = nvim
+  pager = delta
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  navigate = true
+[merge]
+  conflictStyle = zdiff3
+[credential "https://dev.azure.com"]
+        useHttpPath = true
+

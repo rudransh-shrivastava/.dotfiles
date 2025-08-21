@@ -8,6 +8,7 @@ alias ls eza
 
 # Load fnm (fast node manager)
 set -gx PATH $HOME/.fnm $PATH
+set -Ux PAGER bat
 fnm env --use-on-cd | source
 
 # tmux-sessionizer
@@ -34,3 +35,10 @@ function vmrss
   end
 end
 
+
+# pnpm
+set -gx PNPM_HOME "/home/psyduck/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
