@@ -5,10 +5,10 @@ end
 alias vim nvim
 alias home "cd ~/"
 alias ls eza
+alias cat bat
 
 # Load fnm (fast node manager)
 set -gx PATH $HOME/.fnm $PATH
-set -Ux PAGER bat
 fnm env --use-on-cd | source
 
 # tmux-sessionizer
