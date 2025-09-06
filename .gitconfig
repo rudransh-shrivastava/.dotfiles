@@ -7,6 +7,7 @@
 [user]
         email = rudransh.shr@gmail.com
         name = Rudransh Shrivastava
+	signingkey = /home/psyduck/.ssh/git_commit
 [credential "https://git.coffeecodes.in"]
         provider = generic
 [alias]
@@ -25,3 +26,7 @@
 [credential "https://dev.azure.com"]
         useHttpPath = true
 
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
