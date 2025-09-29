@@ -42,9 +42,9 @@ font-size = 15.0
 # # which is explained in the docs for that config option.
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
-# theme = citruszest
+theme = Ayu
 shell-integration-features = no-cursor
 cursor-style = block
 cursor-style-blink = false
-theme = GitHub-Dark-Default
+# theme = Catpucchin Frappe
 background-opacity=0.00

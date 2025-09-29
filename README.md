@@ -8,12 +8,13 @@ sudo systemctl mask systemd-rfkill.socket
 
 # Symlinks
 ```
-ln -s ~/repos/.dotfiles/scripts/ ~/.local/
-ln -s ~/repos/.dotfiles/picom/ ~/.config/
+ln -s ~/repos/.dotfiles/.gitconfig ~/
+ln -s ~/repos/.dotfiles/.tmux.conf ~/
 ln -s ~/repos/.dotfiles/fish/ ~/.config/
 ln -s ~/repos/.dotfiles/ghostty/ ~/.config/
-ln -s ~/repos/.dotfiles/.tmux.conf ~/
-ln -s ~/repos/.dotfiles/nvim/ ~/.config/
 ln -s ~/repos/.dotfiles/i3blocks/ ~/.config/
 ln -s ~/repos/.dotfiles/i3/ ~/.config/
+ln -s ~/repos/.dotfiles/nvim/ ~/.config/
+ln -s ~/repos/.dotfiles/picom/ ~/.config/
+ln -s ~/repos/.dotfiles/scripts/ ~/.local/
 ```

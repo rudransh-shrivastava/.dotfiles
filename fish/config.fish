@@ -5,6 +5,7 @@ end
 alias vim nvim
 alias home "cd ~/"
 alias ls eza
+alias cat bat
 
 # Load fnm (fast node manager)
 set -gx PATH $HOME/.fnm $PATH
@@ -34,3 +35,10 @@ function vmrss
   end
 end
 
+
+# pnpm
+set -gx PNPM_HOME "/home/psyduck/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
