@@ -20,7 +20,7 @@
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
 # font-family = Iosevka
-font-size = 15.0
+font-size = 13.0
 # window-padding-x = 2
 #
 # # Spacing around the equals sign does not matter.
@@ -42,9 +42,10 @@ font-size = 15.0
 # # which is explained in the docs for that config option.
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
-theme = Ayu
+theme = Argonaut
 shell-integration-features = no-cursor
 cursor-style = block
 cursor-style-blink = false
+cursor-color = #d3cdc3
 # theme = Catpucchin Frappe
 background-opacity=0.00
