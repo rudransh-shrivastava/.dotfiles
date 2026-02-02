@@ -16,6 +16,8 @@ return {
 			"query",
 			"vim",
 			"vimdoc",
+      "python",
+      "terraform",
 		},
 		-- Autoinstall languages that are not installed
 		auto_install = true,
