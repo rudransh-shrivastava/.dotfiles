@@ -111,3 +111,26 @@ require("lazy").setup({
 		},
 	},
 })
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "*",
+	callback = function(args)
+		local buf = args.buf
+		local ft = vim.bo[buf].filetype
+
+		-- Skip empty filetypes
+		if ft == "" then
+			return
+		end
+
+		-- Get the language for this filetype
+		local lang = vim.treesitter.language.get_lang(ft)
+		if not lang then
+			return
+		end
+
+		-- Check if parser exists before starting
+		if pcall(vim.treesitter.language.add, lang) then
+			pcall(vim.treesitter.start, buf, lang)
+		end
+	end,
+})
